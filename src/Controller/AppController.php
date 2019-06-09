@@ -15,7 +15,7 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-use Cake\Core\Configure;
+
 
 /**
  * Application Controller
@@ -51,10 +51,6 @@ class AppController extends Controller
          * see https://book.cakephp.org/3.0/en/controllers/components/security.html
          */
         // $this->loadComponent('Security');
-        
-        Configure::write('cf.sitename', '飞行秘书');
-        Configure::write('cf.webServicePassword', 'Cy19841004');
-        
         
     }
 }

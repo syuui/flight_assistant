@@ -34,7 +34,6 @@ use Cake\Console\ConsoleErrorHandler;
 use Cake\Core\App;
 use Cake\Core\Configure;
 use Cake\Core\Configure\Engine\PhpConfig;
-use Cake\Database\Type;
 use Cake\Datasource\ConnectionManager;
 use Cake\Error\ErrorHandler;
 use Cake\Http\ServerRequest;
@@ -190,11 +189,10 @@ ServerRequest::addDetector('tablet', function ($request)
 // Type::build('date')->useImmutable();
 // Type::build('datetime')->useImmutable();
 // Type::build('timestamp')->useImmutable();
-//Cake\I18n\Date::setToStringFormat('y-MM-DD H:i:s');
-//Cake\I18n\FrozenDate::setToStringFormat('y-MM-DD H:i:s');
-//Cake\Database\Type::build('datetime')->useLocaleParser()->setLocaleFormat('y-MM-DD H:i:s');/*
+// Cake\I18n\Date::setToStringFormat('y-MM-DD H:i:s');
+// Cake\I18n\FrozenDate::setToStringFormat('y-MM-DD H:i:s');
+// Cake\Database\Type::build('datetime')->useLocaleParser()->setLocaleFormat('y-MM-DD H:i:s');/*
 
-    
 /*
  * Custom Inflector rules, can be set to correctly pluralize or singularize
  * table, model, controller names or whatever other string is passed to the
@@ -205,5 +203,7 @@ ServerRequest::addDetector('tablet', function ($request)
 // Inflector::rules('uninflected', ['dontinflectme']);
 // Inflector::rules('transliteration', ['/å/' => 'aa']);
 
-
-
+/*
+ * Customize settings here.
+ */
+require __DIR__ . '/custom_settings.php';

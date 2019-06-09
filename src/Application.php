@@ -16,13 +16,12 @@ namespace App;
 
 use Cake\Core\Configure;
 use Cake\Core\Exception\MissingPluginException;
+use Cake\Database\Type;
 use Cake\Error\Middleware\ErrorHandlerMiddleware;
 use Cake\Http\BaseApplication;
-use Cake\Http\Middleware\CsrfProtectionMiddleware;
+use Cake\I18n\Middleware\LocaleSelectorMiddleware;
 use Cake\Routing\Middleware\AssetMiddleware;
 use Cake\Routing\Middleware\RoutingMiddleware;
-use Cake\I18n\Middleware\LocaleSelectorMiddleware;
-use Cake\Database\Type;
 
 
 /**
@@ -82,12 +81,12 @@ class Application extends BaseApplication
             'cacheTime' => Configure::read('Asset.cacheTime')
         ]))
             ->add(new RoutingMiddleware($this, '_cake_routes_'))
-
-         //->add(new CsrfProtectionMiddleware([
-         //'httpOnly' => true ] ))
+            ->
+        // ->add(new CsrfProtectionMiddleware([
+        // 'httpOnly' => true ] ))
         // 不加载这里的CSRF中间件，避免在SOAP中引起错误
         
-         ->add(new LocaleSelectorMiddleware([
+        add(new LocaleSelectorMiddleware([
             'zh_CN',
             'zh_CN'
         ]));
