@@ -1,0 +1,65 @@
+@CHARSET "UTF-8";
+
+/**
+ *  generic.css: Main stylesheet file of FLIGHT project.
+ *
+ *  This stylesheet file itself, will include all other common stylesheets.
+ *  Also, all common setting will be put here.
+ *
+ * @copyright     Copyright (c) 2018 syuui.
+ * @link          http://flight.syuui.top
+ * @since         0.1.1
+ */
+@import url("header.css");
+
+html, body {
+	width: 100%;;
+	height: 100%;;
+	overflow: hidden;;
+	margin: 0;
+}
+
+html {
+	height: auto;;
+	padding: 20px 0 50px
+}
+
+body {
+	font: 12px Verdana, Arial, Tahoma;
+	text-align: center;
+}
+
+#doc {
+	border: none;
+}
+
+#top-pic {
+	margin: 0 auto;
+	width: 900px;
+	height: 500px;
+	position: relative;
+	background: url('../img/top.jpg');
+}
+
+#top-pic:after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 50px 30px #ffffff inset;
+}
+
+#top-pic a{
+	position: absolute;
+	z-index: 1;
+	top: 400px;
+	left: 400px;
+	width: 60px;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: #63b7ff;
+	color: #fff;
+	margin-top: 10px;
+}

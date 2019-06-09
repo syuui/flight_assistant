@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.waiting {
+	line-height: 25px;
+	vertical-align: middle;
+	font-size: 11pt;
+	display: none;
+}

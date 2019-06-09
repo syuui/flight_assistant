@@ -1,0 +1,43 @@
+@CHARSET "UTF-8";
+
+@import url('sidebar.css');
+@import url('element.css');
+
+.g-mn label {
+	width: 100px;
+	display: inline-block;
+}
+
+.g-mn .input {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+table span {
+	margin-left: 20px;
+}
+
+.g-sd .m-list h3 {
+	margin-bottom: 10px;
+}
+
+.g-sd .m-list .m-li {
+	margin-left: 10px;
+}
+
+.error-message {
+	display: inline;
+	color: red;
+	margin-left: 20px;
+}
+
+.required label {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.input.date select{
+	width: 80px;
+	height: 30px;
+	display: inline;
+}

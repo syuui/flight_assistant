@@ -1,0 +1,276 @@
+#==========================================================================================
+#   汉语本地化辞典
+#==========================================================================================
+
+#==========================================================================================
+#   通用
+#==========================================================================================
+msgid "No Result"
+msgstr "未找到任何记录 "
+
+msgid "Are you sure you want to delete # {0}?"
+msgstr "确定要删除 # {0} 吗？"
+
+msgid "Memory"
+msgstr "备注"
+
+msgid "Memo"
+msgstr "备注"
+
+msgid "Submit"
+msgstr "提交"
+
+msgid "Extention must be csv"
+msgstr "扩展名必须为csv"
+
+msgid "Upload File"
+msgstr "上传文件"
+
+msgid "[Line {0}] Unknown enterprise {1}"
+msgstr "[第{0}行] 未知的公司名称 {1}"
+
+msgid "[Line {0}] Unknown aircraft {1}"
+msgstr "[第{0}行] 未知的飞机机型 {1}"
+
+msgid "[Line {0}] Unknown Terminal {1}"
+msgstr "[第{0}行] 未知的航站楼 {1}"
+
+msgid "The {0} has been saved."
+msgstr "{0}信息保存成功。"
+
+msgid "The {0} not saved."
+msgstr "{0}信息保存失败。"
+
+msgid "The {0} has been deleted."
+msgstr "{0}删除成功。"
+
+msgid "The {0} not deleted."
+msgstr "{0}删除失败。"
+
+msgid "Search"
+msgstr "查询"
+
+msgid "Not in use"
+msgstr "功能尚未开通"
+
+#==========================================================================================
+#   分页
+#==========================================================================================
+msgid "first"
+msgstr "首页"
+
+msgid "last"
+msgstr "末页"
+
+msgid "previous"
+msgstr "上一页"
+
+msgid "next"
+msgstr "下一页"
+
+msgid "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total"
+msgstr "页数：{{page}} / {{pages}}, 记录数：{{count}} / {{current}}"
+
+#==========================================================================================
+#   列表操作
+#==========================================================================================
+msgid "Actions"
+msgstr "操作"
+
+msgid "View"
+msgstr "查看"
+
+msgid "Edit"
+msgstr "编辑"
+
+msgid "Delete"
+msgstr "删除"
+
+#==========================================================================================
+#   航空公司
+#==========================================================================================
+msgid "Enterprises"
+msgstr "航空公司"
+
+msgid "New Enterprise"
+msgstr "新增航空公司"
+
+msgid "Edit Enterprise"
+msgstr "编辑航空公司"
+
+msgid "Delete Enterprise"
+msgstr "删除航空公司"
+    
+msgid "List Enterprises"
+msgstr "航空公司列表"
+
+msgid "Chinese Name"
+msgstr "中文名称"
+
+msgid "Chinese Simple Name"
+msgstr "中文略称"
+
+msgid "English Name"
+msgstr "英文名称"
+
+msgid "IATA Code"
+msgstr "IATA代码"
+
+msgid "ICAO Code"
+msgstr "ICAO代码"
+
+msgid "Website"
+msgstr "网站"
+
+msgid "Created"
+msgstr "创建时间"
+
+msgid "Updated"
+msgstr "更新时间"
+
+#==========================================================================================
+#   机型
+#==========================================================================================
+msgid "Aircrafts"
+msgstr "机型"
+
+msgid "Edit Aircraft"
+msgstr "编辑机型"
+
+msgid "Delete Aircraft"
+msgstr "删除机型"
+
+msgid "List Aircrafts"
+msgstr "机型列表"
+
+msgid "New Aircraft"
+msgstr "新增机型"
+
+msgid "aircraft type"
+msgstr "机型"
+
+msgid "maker"
+msgstr "厂商"
+
+#==========================================================================================
+#   机场
+#==========================================================================================
+msgid "Airports"
+msgstr "机场"
+
+msgid "Edit Airport"
+msgstr "编辑机场"
+
+msgid "Delete Airport"
+msgstr "删除机场"
+
+msgid "List Airports"
+msgstr "机场列表"
+
+msgid "New Airport"
+msgstr "新增机场"
+
+#==========================================================================================
+#   航站楼
+#==========================================================================================
+msgid "Terminals"
+msgstr "航站楼"
+
+msgid "Edit Terminal"
+msgstr "编辑航站楼"
+
+msgid "Delete Terminal"
+msgstr "删除航站楼"
+
+msgid "List Terminals"
+msgstr "航站楼列表"
+
+msgid "New Terminal"
+msgstr "新增航站楼"
+
+#==========================================================================================
+#   航班
+#==========================================================================================
+msgid "Flights"
+msgstr "航班"
+
+msgid "Search Flight"
+msgstr "航班查询"
+
+msgid "Edit Flight"
+msgstr "编辑航班"
+
+msgid "Delete Flight"
+msgstr "删除航班"
+
+msgid "List Flights"
+msgstr "航班列表"
+
+msgid "New Flight"
+msgstr "新增航班"
+
+msgid "Origin Terminal"
+msgstr "出发航站楼"
+
+msgid "Destination Terminal"
+msgstr "到达航站楼"
+
+msgid "Origin Datetime"
+msgstr "出发时间"
+
+msgid "Destination Datetime"
+msgstr "到达时间"
+
+msgid "Seat Number"
+msgstr "座位号"
+
+msgid "Gate"
+msgstr "登机口"
+
+msgid "Flight Number"
+msgstr "航班号"
+
+msgid "Flights Upload"
+msgstr "航班信息批量上传"
+
+msgid "Get flight infomation automaticly"
+msgstr "自动取得航班信息"
+
+msgid "Failed to fetch flight information"
+msgstr "取得航班信息失败"
+#==========================================================================================
+#   飞行器注册号
+#==========================================================================================
+msgid "Registers"
+msgstr "飞行器注册号"
+
+msgid "Edit Register"
+msgstr "编辑注册号"
+
+msgid "Delete Register"
+msgstr "删除注册号"
+
+msgid "List Registers"
+msgstr "注册号列表"
+
+msgid "New Register"
+msgstr "新增注册号"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

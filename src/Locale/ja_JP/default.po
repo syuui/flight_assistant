@@ -1,0 +1,8 @@
+msgid "Actions"
+msgstr "SOUSA"
+
+msgid "Add Enterprise"
+msgstr "新增航空公司记录"
+
+msgid "Enterprises"
+msgstr "航空公司"   

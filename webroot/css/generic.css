@@ -1,0 +1,164 @@
+@CHARSET "UTF-8";
+
+/**
+ *  generic.css: Main stylesheet file of FLIGHT project.
+ *
+ *  This stylesheet file itself, will include all other common stylesheets.
+ *  Also, all common setting will be put here.
+ *
+ * @copyright     Copyright (c) 2018 syuui.
+ * @link          http://flight.syuui.top
+ * @since         0.1.1
+ */
+@import url("header.css");
+
+@import url("footer.css");
+
+html, body {
+	width: 100%;;
+	height: 100%;;
+	margin: 0;
+}
+
+html {
+	height: auto;;
+	padding: 20px 0 50px
+}
+
+body {
+	font: 12px Verdana, Arial, Tahoma;
+	background: url("../img/background.jpg");
+}
+
+a {
+	text-decoration: none;
+	color: auto;
+}
+
+ul {
+	padding-inline-start: 5px;
+}
+
+li {
+	list-style: none;
+}
+
+table {
+	width: 100%;
+}
+
+thead tr {
+	
+}
+
+tr {
+	height: 50px;
+}
+
+th {
+	text-align: left;
+	padding: 2px;
+}
+
+td {
+	padding: 2px;
+}
+
+ul.pagination {
+	width: 100%;
+}
+
+ul.pagination li {
+	list-style: none;
+	display: inline-block;
+}
+
+ul.pagination li.prev {
+	margin-right: 10px;
+}
+
+ul.pagination li.next {
+	margin-left: 10px;
+}
+
+/*  预定样式    */
+.inline{
+	display: inline;
+}
+.right{
+	float:right;
+}
+.ok-icon:after{
+	margin-left: 10px;
+	content: url('../img/ok.png');
+	width: 20px;
+	height: 20px;
+}
+
+#doc {
+	margin: 0px auto;
+	width: 1024px;
+	border: none;
+}
+
+#content {
+	margin-top: 50px;
+	min-height: 600px;
+}
+
+#footer {
+	text-align: center;
+}
+
+div.content {
+	width: 864px;
+	float: left;
+	line-height: 30px;
+}
+
+div.content submit {
+	background: #A00BBC;
+}
+
+div.content .error-message {
+	color: red;
+	font-weight: bold;
+}
+
+div.content .error-message:before {
+	content: "* ";
+}
+
+div.content .message {
+	display: block;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+div.input label {
+	display: inline-block;
+	width: 150px;
+	text-align: left;
+}
+
+div.input input {
+	width: 400px;
+}
+
+div.input textarea {
+	width: 400px;
+	height: 80px;
+}
+
+nav#actions-sidebar {
+	margin: 5px 10px 5px 0px;
+	float: left;
+	width: 150px;
+	min-height: 500px;
+	background: #EFFAFC;
+}
+
+nav#actions-sidebar  .heading {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
