@@ -14,7 +14,7 @@ $this->Form->templates([
 function getJson() {
     var enters = JSON.parse("<?= str_replace('"', '\"', json_encode($enterList))?>");
     var terms  = JSON.parse("<?= str_replace('"', '\"', json_encode(array_flip($terminals->toArray())))?>");
-    $.get("http://localhost/ajax/get_flight_info/" + enters[$("#enterprise-id").val()] + $("#number").val(), function(data, status) {
+    $.get("<?=$this->Url->build(['controller'=>'ajax'])?>/get_flight_info/" + enters[$("#enterprise-id").val()] + $("#number").val(), function(data, status) {
         dataObj = eval("(" + data + ")");
         if( dataObj.flightInfo == null ) {
             alert('<?=__('Failed to fetch flight information') ?>');
