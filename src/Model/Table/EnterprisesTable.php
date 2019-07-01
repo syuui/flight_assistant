@@ -111,6 +111,9 @@ class EnterprisesTable extends Table
                 'fields' => [
                     'id',
                     'register'
+                ],
+                'order' => [
+                    'register' => 'ASC'
                 ]
             ]);
             

@@ -68,7 +68,11 @@ class TerminalsController extends AppController
             }
             $this->Flash->error(__('The {0} not saved.', __('Terminals')));
         }
-        $airports = $this->Terminals->Airports->find('list');
+        $airports = $this->Terminals->Airports->find('list', [
+            'order' => [
+                'name' => 'ASC'
+            ]
+        ]);
         $this->set(compact('terminal', 'airports'));
     }
 
@@ -99,7 +103,11 @@ class TerminalsController extends AppController
             }
             $this->Flash->error(__('The {0} not saved.', __('Terminals')));
         }
-        $airports = $this->Airports->find('list');
+        $airports = $this->Airports->find('list', [
+            'order' => [
+                'name' => 'ASC'
+            ]
+        ]);
         $this->set(compact('terminal', 'airports'));
     }
 

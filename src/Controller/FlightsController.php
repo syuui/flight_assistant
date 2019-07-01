@@ -77,12 +77,11 @@ class FlightsController extends AppController
         $this->loadModel('Enterprises');
         $this->loadModel('Registers');
         $this->loadModel('Terminals');
-
+        
         $flight = $this->Flights->newEntity();
         if ($this->request->is('post')) {
             var_dump($this->request->getData());
             
-
             $flight = $this->Flights->patchEntity($flight, $this->request->getData());
             if ($this->Flights->save($flight)) {
                 $this->Flash->success(__('The {0} has been saved.', __('Flights')));
@@ -93,7 +92,11 @@ class FlightsController extends AppController
             }
             $this->Flash->error(__('The {0} not saved.', __('Flights')));
         }
-        $enterprises = $this->Enterprises->find('list');
+        $enterprises = $this->Enterprises->find('list', [
+            'order' => [
+                'name' => 'ASC'
+            ]
+        ]);
         $enterList = $this->Enterprises->find('list', [
             'keyField' => 'id',
             'valueField' => 'iata'
@@ -144,7 +147,11 @@ class FlightsController extends AppController
             }
             $this->Flash->error(__('The {0} not saved.', __('Flights')));
         }
-        $enterprises = $this->Enterprises->find('list');
+        $enterprises = $this->Enterprises->find('list', [
+            'order' => [
+                'name' => 'ASC'
+            ]
+        ]);
         $enterList = $this->Enterprises->find('list', [
             'keyField' => 'id',
             'valueField' => 'iata'
