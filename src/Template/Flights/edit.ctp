@@ -3,6 +3,12 @@
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Flight $flight
  */
+
+//  设置默认的日期字段格式为 YYYY-MM-DD    hh:mm
+$this->Form->templates([
+    'dateWidget' => __('DateWidget')
+]);
+
 ?>
 <?= $this->Html->scriptStart() ?>
 function getJson() {
@@ -43,6 +49,14 @@ function nestedReg(){
         $("#register-id").append(option);       
     }
 }
+
+function nestedDate()
+{
+    $("#des_year").val( $("#ori_year").val() );
+    $("#des_month").val( $("#ori_month").val() );
+    $("#des_day").val( $("#ori_day").val() );
+}
+
 <?= $this->Html->scriptEnd() ?>
 
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
@@ -92,6 +106,18 @@ function nestedReg(){
         ]);
         echo $this->Form->control('ori_datetime', [
             'label' => __('Origin Datetime'),
+            'year' => [
+                'onchange'=>'nestedDate()',
+                'id'=>'ori_year'
+            ],
+            'month' => [
+                'onchange'=>'nestedDate()',
+                'id'=>'ori_month'
+            ],
+            'day' =>[
+                'onchange'=>'nestedDate()',
+                'id'=>'ori_day'
+            ],
             'hour' => [
                 'id' => 'ori_dth'
             ],
@@ -108,6 +134,15 @@ function nestedReg(){
         ]);
         echo $this->Form->control('des_datetime', [
             'label' => __('Destination Datetime'),
+            'year' => [
+                'id'=>'des_year'
+            ],
+            'month' => [
+                'id'=>'des_month'
+            ],
+            'day' =>[
+                'id'=>'des_day'
+            ],
             'hour' => [
                 'id' => 'des_dth'
             ],

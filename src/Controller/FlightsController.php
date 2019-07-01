@@ -36,7 +36,8 @@ class FlightsController extends AppController
             ],
             'order' => [
                 'ori_datetime' => 'DESC'
-            ]
+            ],
+            'limit' => 40
         ];
         $flights = $this->paginate($this->Flights);
         $this->set(compact('flights'));
@@ -76,9 +77,12 @@ class FlightsController extends AppController
         $this->loadModel('Enterprises');
         $this->loadModel('Registers');
         $this->loadModel('Terminals');
-        
+
         $flight = $this->Flights->newEntity();
         if ($this->request->is('post')) {
+            var_dump($this->request->getData());
+            
+
             $flight = $this->Flights->patchEntity($flight, $this->request->getData());
             if ($this->Flights->save($flight)) {
                 $this->Flash->success(__('The {0} has been saved.', __('Flights')));
